@@ -23,7 +23,7 @@ To test what's here:
  ```  
     
 # Requested run configuration
-    Latest chrome browser. I use 
+Latest chrome browser. I was using 
 **WebStorm 2019.2.4**  
     Build #WS-192.7142.35, built on October 28, 2019  
     Licensed to WebStorm Evaluator  
@@ -36,6 +36,20 @@ To test what's here:
     Cores: 4  
     Registry: ide.mac.allowDarkWindowDecorations=true, ide.tree.ui.experimental=false, ide.balloon.shadow.size=0  
     Non-Bundled Plugins: com.chrisrm.idea.MaterialThemeUI, mobi.hsz.idea.gitignore, com.vladsch.idea.multimarkdown, zielu.gittoolbox  
+
+Now, using this version of WebStorm,
+**WebStorm 2019.3 EAP**
+Build #WS-193.5096.13, built on November 6, 2019
+WebStorm EAP User
+Expiration date: December 6, 2019
+Runtime version: 11.0.4+10-b520.5 x86_64
+VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
+macOS 10.14.6
+GC: ParNew, ConcurrentMarkSweep
+Memory: 2014M
+Cores: 4
+Registry: ide.tree.ui.experimental=false, ide.balloon.shadow.size=0
+Non-Bundled Plugins: com.chrisrm.idea.MaterialThemeUI
 
 **Hardware Overview:**
   Model Name:	iMac  
@@ -50,13 +64,13 @@ To test what's here:
   Boot ROM Version:	170.0.0.0.0  
   SMC Version (system):	2.33f10  
   
-  I also run in a Chroot on an older Chromebook in developer mode on Ubuntu Linux.
+  I also run in a Chroot on an older Chromebook in developer mode with Ubuntu Linux.
   
 ## npm start -s For Development
 Builds into memory with source maps that are visible when you open dev tools.
 
 ## npm run build -s For dist folder refresh
- Rebuilds the files in the dist folder and serves production locally
+Rebuilds the files in the dist folder and serves production locally
 
 ## Please disregard deploy and share
 
@@ -72,5 +86,8 @@ The top of the index.ejs explains that that file is a template for index.html. I
 For examples of using it with htmlWebpackPlugin, see https://github.com/jaketrent/html-webpack-template/blob/master/index.ejs Make sure your editor treats .ejs files properly for highlighting  
 
 # Diagram of what the build scripts are doing
+
+![Starter Kit Script Flow](https://user-images.githubusercontent.com/21182598/68532063-f420b180-02de-11ea-9997-67f07e587030.png)
+
 
 

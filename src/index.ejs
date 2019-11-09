@@ -1,0 +1,89 @@
+<!--
+  **NOTE:** This is a template for index.html.
+  It uses ejs and htmlWebpackPlugin to generate a different index.html for
+  each environment. htmlWebpackPlugin will dynamically add references to the
+  scripts and styles that it bundles to this file. The generated bundles have
+  hash-based filenames, so it's necessary to add the references dynamically.
+  For more info on ejs, see https://ejs.co/
+  For examples of using it with htmlWebpackPlugin,
+  see https://github.com/jaketrent/html-webpack-template/blob/master/index.ejs
+  Make sure your editor treats .ejs files properly for highlighting
+ -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="We're a small bootstrapping company based in Dallas, Tx. We make things that don't suck.">
+    <title>tbd</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body class="body">
+<header class="header level-zero">
+    <h1>h1 header</h1>
+    <p class="tag-line"><em>"tag-line slogan!"</em></p>
+    <p class="introduction"><strong>tiny job contracting to stay practiced</strong></p>
+</header>
+<div class="messaging level-zero">
+    <div class="messages hasPadding" id="messages">
+    </div>
+</div>
+<main class="main level-zero">
+    <h2 class="pipeline-header">
+        <button onclick="openModal()" class="mdc-button mdc-button--outlined create-gig-listing">
+            <i class="material-icons mdc-button__icon" aria-hidden="true">create</i>
+            <span class="mdc-button__label">Create</span>
+        </button>
+        Listings
+    </h2>
+    <div class="pipelines">
+        <div class="pipeline-phase" data-id="New" tabindex="0">
+            <p data-id="New">New</p>
+        </div>
+        <div class="pipeline-phase" data-id="Contracted" tabindex="0">
+            <p data-id="Contracted">Contracted</p>
+        </div>
+        <div class="pipeline-phase" data-id="Completed" tabindex="0">
+            <p data-id="Completed">Completed</p>
+        </div>
+        <div class="pipeline-phase" data-id="Archived" tabindex="0">
+            <p data-id="Archived">Archived</p>
+        </div>
+    </div>
+    <h2 class="provider-header">
+        <button onclick="openModal()" class="mdc-button mdc-button--outlined create-provider">
+            <i class="material-icons mdc-button__icon" aria-hidden="true">create</i>
+            <span class="mdc-button__label">Create</span>
+        </button>
+        Providers
+    </h2>
+    <div class="providers">
+        <div class="provider-group" data-id="Browse Providers" tabindex="0">
+            <p data-id="Browse Providers">Browse Providers</p>
+        </div>
+        <div class="provider-group" data-id="Do It Yourself" tabindex="0">
+            <p data-id="Do It Yourself">Do It Yourself</p>
+        </div>
+    </div>
+</main>
+<div class="tips">&nbsp;&nbsp;<i class="material-icons favorite">favorite</i> Thanks for trying <strong>TBD</strong> <i
+            class="material-icons favorite">favorite</i>&nbsp;&nbsp;
+</div>
+<footer class="footer level-zero" aria-label="footer-with-source-data-credits" id="footer">
+    <a class="footer-link" href="https://subscriptionplus.redcrowmethods.com">A Red Crow Consulting Experiment
+    </a> All providers listed as a courtesy to the community and are not part of Red Crow Consulting. Practice kindness
+    and you are welcome to create listings or become a provider.
+</footer>
+<div class="is-not-visible modal-overlay" Role=“dialog”,aria-hidden,aria-label>
+    <div class="modal">
+        <span class="button-close">x</span>
+        <p><strong>fix generic modal and close action<br>these should really
+                be full page material design component dialogs.<br>Document in issue
+                various reading and move to that.
+            </strong></p>
+    </div>
+</div>
+</body>
+</html>

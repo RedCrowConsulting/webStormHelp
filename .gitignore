@@ -1,33 +1,67 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Windows template
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
+# ====== From clean react setup ======
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Dump file
-*.stackdump
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Folder config file
-[Dd]esktop.ini
+# testing
+/coverage
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# production
+/build
 
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-### macOS template
-# General
+# misc
 .DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+gitcommittemplate.txt
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# ====== From p6 ======
+node_modules
+yarn.lock
+.DS_Store
+
+# to keep our linting and atom editor config local
+.editorconfig
+
+.eslintrc
+.eslintrc.js
+.eslintrc.yaml
+.eslintrc.yml
+# .eslintrc.json this is the one we prescribe
+
+.htmlhintrc
+.stylelintrc
+
+
+# Next portion of file Created by https://www.gitignore.io/api/linux,macos,windows
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### macOS ###
+*.DS_Store
 .AppleDouble
 .LSOverride
 
@@ -53,32 +87,39 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### Linux template
-*~
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
 
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
+# Folder config file
+Desktop.ini
 
-# KDE directory preferences
-.directory
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
 
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
+# Windows shortcuts
+*.lnk
 
-### Node template
+
+# End of https://www.gitignore.io/api/linux,macos,windows
+
+# Created by https://www.gitignore.io/api/node
+
+### Node ###
 # Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
-
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
@@ -91,7 +132,6 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
-*.lcov
 
 # nyc test coverage
 .nyc_output
@@ -115,9 +155,6 @@ jspm_packages/
 # TypeScript v1 declaration files
 typings/
 
-# TypeScript cache
-*.tsbuildinfo
-
 # Optional npm cache directory
 .npm
 
@@ -135,7 +172,6 @@ typings/
 
 # dotenv environment variables file
 .env
-.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -150,15 +186,16 @@ typings/
 .vuepress/dist
 
 # Serverless directories
-.serverless/
+.serverless
 
-# FuseBox cache
-.fusebox/
 
-# DynamoDB Local files
-.dynamodb/
+# End of https://www.gitignore.io/api/node
 
-### JetBrains template
+
+# Created by https://www.gitignore.io/api/webstorm
+# Edit at https://www.gitignore.io/?templates=webstorm
+
+### WebStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -228,3 +265,22 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+### WebStorm Patch ###
+# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+
+# *.iml
+# modules.xml
+# .idea/misc.xml
+# *.ipr
+
+# Sonarlint plugin
+.idea/**/sonarlint/
+
+# SonarQube Plugin
+.idea/**/sonarIssues.xml
+
+# Markdown Navigator plugin
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator/
+
+# End of https://www.gitignore.io/api/webstorm
